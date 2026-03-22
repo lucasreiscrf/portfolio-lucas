@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Lucas Reis - Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <button class="menu-btn" id="menu-btn">☰</button>
+    <nav class="container">
+        <ul id="menu">
+            <li><a class="li-nav" href="#sobre-mim">Sobre mim</a></li>
+            <li><a class="li-nav" href="#formacao">Formação</a></li>
+            <li><a class="li-nav" href="#portfolio">Portfólio</a></li>
+            <li><a class="li-nav" href="#contato">Contato</a></li>
+            <li>
+                <div class="toggle">
+                <input type="checkbox" id="checkbox" onclick="trocarTema()">
+                <label for="checkbox" class="label">
+                    <div class="ball"></div>
+                </label>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="perfil">
+    <div>
+        <img src="assets/img/lucas.jpg" alt="Foto de Lucas">
+    </div>
+
+    <div class="principal">
+        <h1>LUCAS REIS</h1>
+        <h6>Desenvolvedor Front-End</h6>
+    </div>
+</div>
+
+<main class="container">
+    <section class="sobre" id="sobre-mim">
+        <h2>SOBRE MIM</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá, meu nome é Lucas, tenho 27 anos, sou estudante de Análise e Desenvolvimento de Sistemas e tenho grande interesse na área de desenvolvimento web, principalmente na parte de Front-End. Gosto de unir lógica de programação com criatividade para criar interfaces modernas, organizadas e funcionais.</p>
+            <br>
+            <p class="sobre-paragrafo">Atualmente venho aprimorando minhas habilidades em HTML, CSS e JavaScript, buscando sempre aprender novas tecnologias e boas práticas de desenvolvimento. Meu objetivo é criar sites bem estruturados, responsivos e que ofereçam uma boa experiência para os usuários.</p>
+            <br>
+            <p class="sobre-paragrafo">No meu tempo livre gosto de acompanhar as novidades do mundo da tecnologia e da geopolítica, gosto de assistir futebol, filmes e séries, jogar videogame e explorar novos conteúdos.</p>
+        </div>
+    </section>
+
+    <section class="formacao" id="formacao">
+        <h2>FORMAÇÃO</h2>
+        <div class="formacao-caixa">
+            <p class="formacao-paragrafo">
+                <strong>2013/2015</strong><br>
+                Ensino Médio integrado ao Curso Técnico em Eletrônica<br>
+                FAETEC – Fundação de Apoio à Escola Técnica do Estado do Rio de Janeiro
+            </p>
+            <br>
+            <p class="formacao-paragrafo">
+                <strong>2025/2027</strong>
+                <br>
+                Curso Superior em Análise e Desenvolvimento de Sistemas
+                <br>
+                UNINTER – Centro Universitário Internacional
+            </p>
+            <br>
+            <p class="formacao-paragrafo">
+                <strong>Idiomas</strong>
+                <br>
+                Português – Nativo
+                <br>
+                Inglês – Básico
+            </p>
+            <br>
+            <p class="formacao-paragrafo">
+                <strong>Cursos</strong>
+                <br>
+                Front-End Básico
+                <br>
+                Excel Básico
+                <br>
+                Python Fundamental
+            </p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>PORTFÓLIO</h2>
+        <div class="portfolio-caixa">
+
+            <div class="portfolio-card">
+                <a href="https://github.com/lucasreiscrf/site-fla.git">
+                <img src="assets/img/site-flamengo.png" alt="Site do Flamengo" class="portfolio-imagem">
+                <div class="caixa-textos-portfolio">
+                    <h3>Site do Flamengo</h3>
+                    <p class="paragrafo-portfolio">Inspirado no site oficial do Flamengo</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="portfolio-card">
+                <a href="https://github.com/lucasreiscrf/projeto-final.git">
+                <img src="assets/img/site-apple.png" alt="Site da Apple" class="portfolio-imagem">
+                <div class="caixa-textos-portfolio">
+                    <h3>Site da Apple</h3>
+                    <p class="paragrafo-portfolio">Inspirado no site oficial da Apple</p>
+                </div>
+                </a>
+            </div>
+
+            <div class="portfolio-card">
+                <a href="https://github.com/lucasreiscrf/skyrim-page.git">
+                <img src="assets/img/pagina-skyrim.png" alt="Página do Skyrim" class="portfolio-imagem">
+                <div class="caixa-textos-portfolio">
+                    <h3>Página sobre Skyrim</h3>
+                    <p class="paragrafo-portfolio">Página informativa sobre o jogo</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>CONTATO</h2>
+        <form class="formulario-contato" id="formContato">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" class="campo" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" class="campo" id="email" name="email">
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" name="msg" class="campo" rows="5" cols="40"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="botao">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container"> 
+        <ul>
+            <li>Direitos autorais</li>
+            <li>Avisos legais</li>
+            <li>Política de privacidade</li>
+        </ul>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
